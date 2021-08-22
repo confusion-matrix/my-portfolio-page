@@ -5,7 +5,7 @@ Develop a portfolio page to display my capabilites and future projects
 for interested employers. Created a basic template that can be later expanded and built upon.
 
 ## Installation & Usage
-To view the project open the page:
+To view the project open the page: https://confusion-matrix.github.io/my-portfolio-page/
 
 ## Credits
 https://www.w3schools.com/
