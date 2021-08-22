@@ -1,0 +1,155 @@
+/* Global settings */
+p {
+    font-family: "Trebuchet MS";
+}
+
+h2 {
+    font-family: 'Trebuchet MS';
+    text-decoration: underline;
+}
+
+li {
+    font-family: 'Trebuchet MS';
+}
+
+/* Headers */
+.header {
+    font-family: Courier;
+    display: flex;
+    margin: 70px 40px 30px 70px; 
+}
+
+.header-item {
+    flex: 1;
+    margin: 20px 100px 0px 100px;
+}
+
+.header-item:first-child {
+    margin-right: 50px;
+}
+
+.header-item.text {
+    background-color: #b8afa6;
+    border: 5px solid #808080;
+    margin-top: 150px;
+    padding: 0px 10px 0px 10px;
+    border-radius: 25px;
+}
+
+.header-item.text p {
+    margin-top: 3px;
+}
+
+.header-item.image img {
+    margin: 0px 50px 0px 50px;
+    width: 300px;
+    height: 400px;
+    border-radius: 25px;
+    border: 5px solid #797878;
+    object-fit: cover;
+}
+
+.links {
+    list-style-type: none;
+}
+
+.links li {
+    font-size: 12px;
+    display: inline-block;
+    zoom: 1;
+}
+
+.links li a {
+    background-color: antiquewhite;
+    border-radius: 10px;
+    color: black; 
+    text-decoration: none;
+    padding: 2px;
+}
+
+/* Main Content */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Create nx2 table */
+.content-item {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 33%;
+
+    margin: 20px 70px;
+    padding: 5px 15px;
+    height: 300px;
+    width: 100px;
+}
+
+.content-item.text {
+    border-radius: 25px;
+}
+
+.content-item.text.yellow {
+    background-color: #e7e777;
+    border: 5px solid #dbdb75
+}
+
+.content-item.text.green {
+    background-color: #85f185;
+    border: 5px solid rgb(139, 185, 139)
+}
+
+.content-item.text.blue {
+    background-color: rgb(167, 229, 245);
+    border:5px solid rgb(164, 203, 212)
+}
+
+.content-item.image img {
+    margin: 0px 50px 0px 50px;
+    width: 450px;
+    height: 300px;
+    border-radius: 25px;
+    border: 5px solid #797878;
+    object-fit: cover;
+}
+
+.content-item.image img:hover {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+
+/* id's */
+#data-sec {
+    font-family: 'Trebuchet MS';
+    text-decoration: underline;
+    font-size: 1.5em;
+    background-color: none;
+}
+
+#web-sec {
+    font-family: 'Trebuchet MS';
+    text-decoration: underline;
+    font-size: 1.5em;
+    background-color: none;
+}
+
+#game-sec {
+    font-family: 'Trebuchet MS';
+    text-decoration: underline;
+    font-size: 1.5em;
+    background-color: none;
+}
+
+
+/* For Mobile */
+/* @media screen and (max-width: 540px) {
+    .view {
+        width: 400px;
+    }
+} */
+
+/* For Tablets */
+/* @media screen and (min-width: 540px) and (max-width: 780px) {
+    .view {
+        width: 600px;
+    }
+} */
