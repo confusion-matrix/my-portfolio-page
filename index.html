@@ -1,114 +1,137 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <meta charset="UTF-8"/>
-        <link rel="stylesheet" href="./assets/style.css">
-        <title>Portfolio Page</title>
-    </head>
 
-    <body>
-        <div class="header">
-            <div class="header-item image">
-                <img src="assets/images/me.jpg">
-            </div>
-            <div class="header-item text">
-                <h2 class="name">Carlos Hernandez</h2>
-                <h3 class="job-title">Software Developer</h3>
-                <ul class="links">
-                    <li>
-                        <a href="https://github.com/confusion-matrix">Github</a>
-                    </li>
-                    <li>
-                        <a>carlosghernandez95@gmail.com</a>
-                    </li>
-                </ul>
-                <p>
-                    I'm a software developer, student, and data aficionado. Cal Poly class of 2019.
-                    I enjoy learning about all things computer related and trying new experiences.
-                </p>
-                <ul class="links">
-                    <li>
-                        <a href="#data-sec">Data Analysis</a>
-                    </li>
-                    <li>
-                        <a href="#web-sec">Web Dev</a>
-                    </li>
-                    <li>
-                        <a href="#game-sec">Game Dev</a>
-                    </li>
-                </ul>
-            </div>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Portfolio Page</title>
+</head>
 
+<body>
+    <div id="main-header" class="header">
+        <div id="image-header" class="header-item image">
+            <img src="assets/images/me.jpg">
         </div>
-        <main>
-            <div class="content">
+        <div id="text-header" class="header-item text">
+            <h2 class="name">Carlos Hernandez</h2>
+            <h3 class="job-title">Software Developer</h3>
+            <p>
+                Info & Links:
+            </p>
+            <ul class="links">
+                <li>
+                    <a href="#about-me-link">About Me</a>
+                </li>
+                <li>
+                    <a href="https://github.com/confusion-matrix">Github</a>
+                </li>
+                <li>
+                    <a>carlosghernandez95@gmail.com</a>
+                </li>
+            </ul>
+            <p>
+                Projects:
+            </p>
+            <ul class="links">
+                <li>
+                    <a href="#data-sec">Movie Finder</a>
+                </li>
+                <li>
+                    <a href="#web-sec">Weather App</a>
+                </li>
+                <li>
+                    <a href="#game-sec">Day Planner</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <main>
+        <div id="content">
+            <div id="movie-finder" class="row">
                 <div class="content-item text yellow">
-                    <a id="data-sec">Data Analytics</a>
+                    <a id="data-sec">Move Finder</a>
                     <p>
-                        Data analysis is a powerful tool to gain new insights from exisiting data.
-                    </p>  
+                        Using multiple APIs me and a small group of developers created a webapp that lets its user
+                        search for movie titles and see what streaming platforms they're available on.
+                    </p>
                     <ul>
                         <li>
-                            Using technologies like Python and R I've created programs that apply statisical models to large datasets.
-                            Through these methods we can acquire new knowledge from existing data.
+                            I was in charge of the JavaScript for this project. I wrote several different functions that
+                            utilized our APIs to gather the data we used to display the search results.
+                            Using JavaScript and jQuery we were also able to generate HTML code to update our webpage after
+                            each search.
                         </li>
                         <li>
-                            Some packages and libraries I'm familar with are Pandas, Sci-Kit Learn, tidyverse, and ggplot2.
+                            Using Bulma.io we styled our HTML, we also used some custom CSS.
                         </li>
-                     </ul>
+                    </ul>
                 </div>
                 <div class="content-item image">
-                    <a href="#">
-                        <img src="assets/images/dataAnalysis.jpg" alt="Data Analytics">
+                    <a href="https://github.com/israelmrios/Movie-Finder">
+                        <img src="assets/images/movie-finder.PNG" alt="Movie Finder">
                     </a>
                 </div>
-                
+            </div>
+
+            <div id="weather-app" class="row">
                 <div class="content-item image">
-                    <a href="#">
-                        <img src="assets/images/webDev.jpg" alt="Web Developement">
-                    </a>  
+                    <a href="https://github.com/confusion-matrix/weather-webapp">
+                        <img src="assets/images/weather-app.PNG" alt="Web Developement">
+                    </a>
                 </div>
                 <div class="content-item text green">
-                    <a id="web-sec">Web Developement</a>
+                    <a id="web-sec">Weather App</a>
                     <p>
-                        Web Developement is as popular as ever and is one of the fastest changing fields.
+                        Using OpenWeather API I made a website that lets users search for current weather and a
+                        5 day forecast. Complete with a history search box.
                     </p>
                     <ul>
                         <li>
-                            Combining my love for video games and data I've helped work on a web application that retrieves data from many sources
-                            throughout the web. Using technqiues like web scraping and using APIs we were able to bring relevant information to its users.
+                            This project relied on taking advantahe of the different API parameters and flex box CSS to
+                            gather and arrange the search results.
+                            We also displayed the history tab by using the browsers local storage availablilty.
                         </li>
                     </ul>
-                </div>
-
-                <div class="content-item text blue">
-                    <a id="game-sec">Game Developement</a>
-                    <p>
-                        Video games are one of the most popular markets when it comes to digital media.
-                    </p>
-                    <ul>
-                        <li>
-                            Game development is a complex process with multiple pieces, I've helped plan, develop and test a project which involved using the
-                            Godot game engine.
-                        </li>
-                        <li>
-                            For this project we used C# and our assets were done using Aseprite.
-                        </li>
-                    </ul>
-                </div>
-                <div class="content-item image">
-                    <a href="#">
-                        <img src="assets/images/videoGame.jpg" alt="Game Design">
-                    </a>
-                    
                 </div>
             </div>
             
+            <div id="day-planner" class="row">
+                <div class="content-item text blue">
+                    <a id="game-sec">Day Planner</a>
+                    <p>
+                        A webapp that can be used to plan out each day. This lets turn to any day and create a detailed
+                        outline of your day.  
+                    </p>
+                    <ul>
+                        <li>
+                            Using jQuery, I created dynamically changing textareas that lets users fillout hourly timeblocks,
+                            these hourly blocks are also color coded to determing whether they're upcoming or in the past.
+                            We can also switch dates by using a datepicker.
+                        </li>
+                        <li>
+                            This project relied heavily on the users local storage and JSON object manipulation to store users
+                            entries.
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-item image">
+                    <a href="https://github.com/confusion-matrix/work-day-scheduler">
+                        <img src="assets/images/day-planner.PNG" alt="Day Planner">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="aboout-me" class="content-item text gray">
+            <a id="about-me-link">About Me</a>
+            <p>
+                I'm a software developer, student, and data aficionado. Cal Poly class of 2019.
+                I enjoy learning about all things computer related and trying new experiences.
+            </p>
+        </div>
 
-        </main>
 
+    </main>
+</body>
 
-
-
-    </body>
 </html>

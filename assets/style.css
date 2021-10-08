@@ -13,25 +13,22 @@ li {
 }
 
 /* Headers */
-.header {
+#main-header {
     font-family: Courier;
     display: flex;
-    margin: 70px 40px 30px 70px; 
+    flex-direction: row;
+    margin: 25px 10px 0px 10px;
 }
 
-.header-item {
-    flex: 1;
-    margin: 20px 100px 0px 100px;
+#image-header {
+    margin-left: 200px;
 }
 
-.header-item:first-child {
-    margin-right: 50px;
-}
-
-.header-item.text {
+#text-header {
     background-color: #b8afa6;
     border: 5px solid #808080;
     margin-top: 150px;
+    margin-right: 250px;
     padding: 0px 10px 0px 10px;
     border-radius: 25px;
 }
@@ -64,28 +61,24 @@ li {
     border-radius: 10px;
     color: black; 
     text-decoration: none;
-    padding: 2px;
+    padding: 4px;
 }
 
 /* Main Content */
-.content {
+/* #content {
     display: flex;
-    flex-wrap: wrap;
+    
+} */
+.row {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 100px 20px 100px;
 }
-/* Create nx2 table */
-.content-item {
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 33%;
 
-    margin: 20px 70px;
-    padding: 5px 15px;
-    height: 300px;
-    width: 100px;
-}
 
 .content-item.text {
     border-radius: 25px;
+    padding: 15px;
 }
 
 .content-item.text.yellow {
@@ -101,6 +94,12 @@ li {
 .content-item.text.blue {
     background-color: rgb(167, 229, 245);
     border:5px solid rgb(164, 203, 212)
+}
+
+.content-item.text.gray {
+    background-color: rgb(185, 185, 185);
+    border: 5px solid rgb(83, 82, 82);
+    margin: 20px 200px 100px 200px;
 }
 
 .content-item.image img {
@@ -139,17 +138,9 @@ li {
     background-color: none;
 }
 
-
-/* For Mobile */
-/* @media screen and (max-width: 540px) {
-    .view {
-        width: 400px;
-    }
-} */
-
-/* For Tablets */
-/* @media screen and (min-width: 540px) and (max-width: 780px) {
-    .view {
-        width: 600px;
-    }
-} */
+#about-me-link {
+    font-family: 'Trebuchet MS';
+    text-decoration: underline;
+    font-size: 1.5em;
+    background-color: none;
+}
