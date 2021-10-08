@@ -75,7 +75,6 @@ li {
     margin: 20px 100px 20px 100px;
 }
 
-
 .content-item.text {
     border-radius: 25px;
     padding: 15px;
@@ -100,6 +99,10 @@ li {
     background-color: rgb(185, 185, 185);
     border: 5px solid rgb(83, 82, 82);
     margin: 20px 200px 100px 200px;
+}
+
+.content-item.image {
+    display: block;
 }
 
 .content-item.image img {
@@ -143,4 +146,12 @@ li {
     text-decoration: underline;
     font-size: 1.5em;
     background-color: none;
+}
+
+#main-img {
+    margin: 0px 50px 0px 50px;
+    width: 500px;
+    height: 300px;
+    border-radius: 25px;
+    border: 5px solid #797878;
 }
